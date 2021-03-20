@@ -7,52 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Record your day</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="nav">
-        <span>Record your day</span>
-        <span>노마드 사진</span>
-        <span>day/night 모드</span>
+    <div class="nav-bar">
+        <div class="nav title">Record your day</div>
+        <div class="nav nav-content">day/night</div>
     </div>
-    <div id="content">
+    <div class="content">
         <div>
             <div class="js-clock clock">
                 <h1>00:00</h1>
             </div>
-            <span class="js-weather"></span>
+            <span class="js-weather weather"></span>
         </div>
         <!-- greeting -->
         <div>
             <form class="js-form form">
-                <div>What is your name?</div>
+                <h4>What is your name?</h4>
                 <input type="text" placeholder="Write your name" />
             </form>
             <h4 class="js-greeting greetings"></h4>
         </div>
         <!-- todolist -->
-        <form class="js-toDoForm">
-            <h4>Record your day</h4>
-            <input type="text" placeholder="Write a to do" />
-        </form>
-        <div class="toDoList">
-            <div class="pending">
-                <h4>-ing</h4>
-                <ul class="js-pending">
-                </ul>
-            </div>
-            <div class="finished">
-                <h4>Done!</h4>
-                <ul class="js-finished">
-                </ul>
+        <div class="toDo">
+            <form class="js-toDoForm">
+                <h4>Record your day</h4>
+                <input type="text" placeholder="Write a to do" />
+            </form>
+            <div class="toDoList">
+                <div class="pending">
+                    <h4>-ing</h4>
+                    <ul class="js-pending">
+                    </ul>
+                </div>
+                <div class="finished">
+                    <h4>Done!</h4>
+                    <ul class="js-finished">
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
+
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
-    <!-- <script src="background.js"></script> -->
+    <script src="background.js"></script>
     <script src="weather.js"></script>
 </body>
 
