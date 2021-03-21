@@ -9,6 +9,7 @@ body {
 ul {
     list-style-type: none;
     padding-inline-start: 0px;
+    margin: 0;
 }
 
 input{
@@ -49,6 +50,7 @@ h4 {
     background-color: #D3E1EE;
     padding: 10px 30px;
 }
+
 .title {
     font-size: 30px;
     line-height: 30px;
@@ -71,8 +73,12 @@ h4 {
 }
 
 /* clock & weather 영역 */
+.info{
+    margin: 20px;
+}
+
 .clock{
-    font-size: 40px;
+    font-size: 45px;
 }
 
 /* user name 영역 */
@@ -91,7 +97,7 @@ h4 {
 .toDo{
     width: 800px;
     margin: 30px auto;
-    padding: 10px;
+    padding: 15px 10px 20px;
     border-radius: 10px;
     background-color:rgba( 255, 255, 255, 0.55 );
 }
@@ -100,14 +106,17 @@ h4 {
     text-align: center;
     display: flex;
     justify-content: center;
-    
 }
 
 .pending,
 .finished {
     width: 250px;
+    margin-top: 15px;
 }
 
+.toDoTitle {
+    font-size: 40px;
+}
 @keyframes fadeIn{
     from {
         opacity: 0;
