@@ -4,13 +4,13 @@ const clockContainer = document.querySelector(".js-clock"),
 
 function getTime() {
     const date = new Date();
-    const hours = date.getHours();
+    let hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
     const apm = "";
     if (hours > 12) {
-        hours -= 12;
         amp = "오후";
+        hours -= 12;
     }
     else {
         amp = "오전";
