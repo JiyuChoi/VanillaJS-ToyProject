@@ -1,7 +1,3 @@
-// <⚠️ DONT DELETE THIS ⚠️>
-import "./styles.css";
-// <⚠️ /DONT DELETE THIS ⚠️>
-
 const button = document.querySelectorAll("button");
 const inputNumber = document.querySelector("input");
 
