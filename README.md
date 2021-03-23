@@ -1,2 +1,2 @@
-# VallinaJS-ToyProject
+# VanillaJS-ToyProject
 ToyProject
